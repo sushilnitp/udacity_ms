@@ -12,4 +12,8 @@ docker image ls
 
 # Step 3: 
 # Run flask app
+<<<<<<< HEAD
 docker container run --name web -p 8000:80 myimage:1.0
+=======
+docker container run --name web -p 8000:80 myimage:1.0
+>>>>>>> 04b8bf548af57ef07623957805c1ff1f9ff14481
