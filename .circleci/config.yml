@@ -28,8 +28,8 @@ python3 -m venv venv
 . venvbinactivate
 make install
 # Install hadolint
-wget -O binhadolint httpsgithub.comhadolinthadolintreleasesdownloadv1.16.3hadolint-Linux-x86_64 &&
-chmod +x binhadolint
+wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.22.1/hadolint-Linux-x86_64
+chmod +x /bin/hadolint
 - save_cache
 paths
 - .venv
