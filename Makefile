@@ -13,8 +13,9 @@ setup:
 install:
 	# This should be run from inside a virtualenv
 	pip3 install --upgrade pip &&\
-		pip3 install -r requirements.txt
-
+	pip install pylint &&\
+	pip3 install -r requirements.txt
+# pip install pylint
 test:
 	# Additional, optional, tests could go here
 	#python -m pytest -vv --cov=myrepolib tests/*.py
