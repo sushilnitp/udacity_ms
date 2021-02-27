@@ -1,1 +1,8 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.msops) [ec2-user@ip-172-31-25-22 udacity_ms]$ ./run_kubernetes.sh
+pod/udacity created
+NAME      READY   STATUS              RESTARTS   AGE
+udacity   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.msops) [ec2-user@ip-172-31-25-22 udacity_ms]$ kubectl get pod
+NAME      READY   STATUS    RESTARTS   AGE
+udacity   1/1     Running   0          44s
