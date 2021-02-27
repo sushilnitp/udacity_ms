@@ -15,4 +15,5 @@ docker login &&\
 	
 # Step 3:
 # Push image to a docker repository
-docker push sushilnitp/sushiludacity:myimage:1.0
+#docker push sushilnitp/sushiludacity
+$dockerpath
