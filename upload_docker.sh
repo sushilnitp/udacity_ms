@@ -11,8 +11,9 @@ dockerpath=sushilnitp/sushiludacity
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login &&\
-    docker image tag myimage:1.0 $dockerpath
+    docker image tag sushiludacity $dockerpath
 	
 # Step 3:
 # Push image to a docker repository
-docker push sushilnitp/sushiludacity:myimage:1.0
+#docker push sushilnitp/sushiludacity
+ docker image push $dockerpath
