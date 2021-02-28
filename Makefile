@@ -9,14 +9,17 @@ setup:
 	# Create python virtualenv & source it
 	# source ~/.msops/bin/activate
 	python3 -m venv ~/.msops
-	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
-    chmod +x /bin/hadolint 
+
 
 install:
 	# This should be run from inside a virtualenv
 	pip3 install --upgrade pip &&\
 	pip install pylint &&\
 	pip3 install -r requirements.txt
+
+# Install Hadolint	
+	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+    chmod +x /bin/hadolint 
 # pip install pylint
 test:
 	# Additional, optional, tests could go here
